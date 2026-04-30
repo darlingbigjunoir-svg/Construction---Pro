@@ -931,7 +931,7 @@ nav#nav-menu ul li a.active::after {
     grid-template-columns: 1fr 1.5fr;
     gap: 32px;
     padding: 60px 80px;
-    background: #f5f5f5;
+    background:#f5f5f5;
 }
 
 .info-card {
