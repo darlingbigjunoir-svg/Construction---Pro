@@ -17,15 +17,16 @@ if (menuToggle && navMenu) {
     });
 
     document.addEventListener('click', (e) => {
-        if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
-            navMenu.classList.remove('open');
-            const icon = menuToggle.querySelector('i');
-            if (icon) {
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-xmark');
-            }
+    if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('open');
+
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-xmark');
         }
-    });
+    }
+});
 }
 
 // ===========================
