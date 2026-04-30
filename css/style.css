@@ -985,6 +985,10 @@ nav#nav-menu ul li a.active::after {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+.contact-hero {
+    height: 380px;
+    background-image: url('../images/contact.jpg');
+}
 
 .contact-item .value {
     font-size: 14px;
