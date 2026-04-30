@@ -988,6 +988,29 @@ nav#nav-menu ul li a.active::after {
 .contact-hero {
     height: 380px;
     background-image: url('../images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-hero-content .tag-label {
+    color: #ffffff;
+}
+
+.contact-hero-content .tag-label span {
+    background-color: #f5a623;
 }
 
 .contact-item .value {
