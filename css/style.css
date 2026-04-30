@@ -1184,6 +1184,159 @@ nav#nav-menu ul li a.active::after {
 }
 
 
+/* ===========================
+   TEAM MAIN SECTION
+   =========================== */
+.team-main {
+    padding: 70px 0 80px;
+    background-color: #f9f9f9;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-banner {
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+.team-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    margin: -45px auto 0;
+    position: relative;
+    z-index: 1;
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-body {
+    padding: 14px 20px 0;
+}
+
+.team-body h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.team-role {
+    font-size: 13px;
+    color: #4f46e5;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-socials a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.team-socials a:hover {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+/* ===========================
+   TEAM HERO
+   =========================== */
+.team-hero {
+    height: 480px;
+    background-image: url('../images/team.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.team-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.team-hero-content {
+    position: relative;
+    z-index: 10;
+    color: #ffffff;
+    padding: 0 20px;
+    max-width: 620px;
+}
+
+.team-hero-tag {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4f9eb5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.team-hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.team-hero-content p {
+    font-size: 15px;
+    opacity: 0.88;
+    line-height: 1.8;
+}
+
+
+
+
 
 
 /* ===========================
