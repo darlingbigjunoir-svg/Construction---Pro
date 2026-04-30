@@ -1008,6 +1008,13 @@ nav#nav-menu ul li a.active::after {
 .contact-hero-content .tag-label {
     color: #ffffff;
 }
+.contact-hero-content h1{
+    color:white;
+}
+.contact-hero-content p{
+    color: white;
+}
+
 
 .contact-hero-content .tag-label span {
     background-color: #f5a623;
