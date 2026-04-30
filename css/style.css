@@ -1583,7 +1583,29 @@ footer {
 }
 
 /* ===========================
-   RESPONSIVE - TABLET
+   FULL RESPONSIVE STYLES
+   responsive.css
+   =========================== */
+
+/* ===========================
+   LARGE DESKTOP (max 1200px)
+   =========================== */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .section {
+        padding: 60px 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.4fr 1fr 1.2fr 1.2fr;
+    }
+}
+
+/* ===========================
+   TABLET LANDSCAPE (max 1024px)
    =========================== */
 @media (max-width: 1024px) {
     .why-grid {
@@ -1594,19 +1616,54 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
     }
 
     .testi-card {
         min-width: calc(50% - 11px);
     }
+
+    .about-grid {
+        gap: 30px;
+    }
+
+    .section {
+        padding: 50px 40px;
+    }
+
+    .head-details h1 {
+        font-size: 36px;
+    }
+
+    .services-title {
+        font-size: 30px;
+    }
+
+    .team-hero-content h1 {
+        font-size: 40px;
+    }
 }
 
 /* ===========================
-   RESPONSIVE - MOBILE
+   TABLET PORTRAIT (max 768px)
    =========================== */
 @media (max-width: 768px) {
+
+    /* Navbar */
     .menu-toggle {
         display: block;
     }
@@ -1641,30 +1698,53 @@ footer {
         padding: 12px 22px;
     }
 
-    .head-details h1 {
-        font-size: 28px;
-    }
-
+    /* Hero Slider */
     .hero-slider {
-        height: 420px;
+        height: 380px;
     }
 
-    .services-title {
+    .head-details h1 {
         font-size: 26px;
     }
 
-    .footer-grid {
+    .head-details p {
+        font-size: 14px;
+    }
+
+    /* Why Us */
+    .why-us {
+        padding: 50px 0 40px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Services */
+    .services {
+        padding: 50px 0;
+    }
+
+    .services-title {
+        font-size: 24px;
+    }
+
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
-    .footer-bottom .container {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
+    .services-cards-grid {
+        grid-template-columns: 1fr;
     }
 
-    .testi-card {
-        min-width: 88%;
+    /* Projects */
+    .projects-main {
+        padding: 50px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .proj-arrow.prev {
@@ -1674,22 +1754,229 @@ footer {
     .proj-arrow.next {
         right: 8px;
     }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-hero {
+        height: 260px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 28px;
+    }
+
+    /* Services Hero */
+    .services-hero {
+        height: 280px;
+    }
+
+    .services-hero-content h1 {
+        font-size: 32px;
+    }
+
+    /* Contact Hero */
+    .contact-hero {
+        height: 280px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 30px;
+    }
+
+    /* Contact Section */
+    .section {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    /* Team Hero */
+    .team-hero {
+        height: 340px;
+    }
+
+    .team-hero-content h1 {
+        font-size: 30px;
+    }
+
+    .team-hero-content p {
+        font-size: 14px;
+    }
+
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonials */
+    .testi-card {
+        min-width: 88%;
+    }
+
+    /* Partners */
+    .partner-logos {
+        gap: 30px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }
 
-@media (max-width: 480px) {
+/* ===========================
+   MOBILE (max 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+    /* General */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Hero */
+    .hero-slider {
+        height: 320px;
+    }
+
+    .head-details h1 {
+        font-size: 22px;
+    }
+
+    .head-details p {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    /* Why Grid */
     .why-grid {
         grid-template-columns: 1fr;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
+    /* Services */
+    .services-title {
+        font-size: 22px;
     }
 
-    .head-details h1 {
+    /* About */
+    .about-hero-content h1 {
         font-size: 24px;
     }
 
+    /* Contact */
+    .contact-hero-content h1 {
+        font-size: 26px;
+    }
+
+    .row-group {
+        grid-template-columns: 1fr;
+    }
+
+    /* Team */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-hero-content h1 {
+        font-size: 26px;
+    }
+
+    .team-hero {
+        height: 300px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services Cards */
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Partners */
     .partner-logos {
-        gap: 22px;
+        gap: 20px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter button {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* ===========================
+   SMALL MOBILE (max 400px)
+   =========================== */
+@media (max-width: 400px) {
+    .head-details h1 {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding: 12px 14px;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 22px;
+    }
+
+    .team-hero-content h1 {
+        font-size: 22px;
+    }
+
+    .services-hero-content h1 {
+        font-size: 26px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 22px;
+    }
+
+    .form-card {
+        padding: 24px 16px;
+    }
+
+    .send-btn {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .team-card-banner {
+        height: 110px;
+    }
+
+    .team-avatar {
+        width: 75px;
+        height: 75px;
+        margin: -38px auto 0;
     }
 }
